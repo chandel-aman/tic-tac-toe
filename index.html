@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="sideBar">
+        <a href="index.html"><i class="fa fa-home fa-2x"></i></a>
+        <a href="about.html"><i class="fa fa-gamepad fa-2x"></i></a>
+        <div id="socialHandles">
+            <a href="https://www.instagram.com/_chandel.aman_/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/aman-singh-07786a228/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a href="https://www.github.com/chandel-aman/" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        </div>
+    </div>
+    <div id="layer1">
+        <div id="ttt">Tic Tac Toe</div>
+        <div id="playbtn" onclick="removeLayer()"><i class="fa fa-play fa-2x">Play</i></div>
+    </div>    
+    <div id="layer2">
+        <div id="layer2_1" onclick="checkPlayer()">Play VS
+            <br>
+            <span class="choice" id="computer">Computer</span>
+            <span class="choice" id="friend">Friend</span>
+        </div>
+        <div id="layer2_2">Play As
+            <br>
+            <span class="choice" id="x" onclick="assignX()">X</span>
+            <span class="choice" id="o" onclick="assignO()">O</span>
+        </div>
+    </div>
+    <div id="turn"></div>
+    <table id="gameBoard">
+        <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>
+    <div class="endGame">
+        <div id="win">Text</div>
+        <div id="playAgain" onclick="restart()">Play Again</div>
+    </div>
+</body>
+</html>
